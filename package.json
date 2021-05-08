@@ -1,0 +1,11 @@
+{
+  "name": "planned-test-2",
+  "version": "1.0.0",
+  "description": "A node/express back-end challenge",
+  "main": "index.js",
+  "scripts": {
+    "create-abbreviations": "COMPANY_FILE=./companies.json node ./scripts/createAbrv"
+  },
+  "author": "Planned",
+  "license": "ISC"
+}
