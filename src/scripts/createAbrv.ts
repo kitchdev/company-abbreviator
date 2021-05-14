@@ -6,6 +6,10 @@ interface Company {
   abbreviated_code: string;
 }
 
+const codesInUse = companies
+  .filter(({ abbreviated_code }) => abbreviated_code.length > 0)
+  .map(({ abbreviated_code }) => abbreviated_code);
+
 // Talk other ways of doing this, potentially overkill,
 // take first characters, shift right, append random character...
 function threeLetterPermutations(string: string): string[] {
@@ -25,11 +29,6 @@ function threeLetterPermutations(string: string): string[] {
 
 // need to take a company name and create a unique company code if one does not exist
 const createAbrv = async (): Company[] => {
-
-  const codesInUse = companies
-    .filter(({ abbreviated_code }) => abbreviated_code.length > 0)
-    .map(({ abbreviated_code }) => abbreviated_code);
-
   const companyJson = companies.map(({ name, abbreviated_code }) => {
     let companyCode = abbreviated_code;
 

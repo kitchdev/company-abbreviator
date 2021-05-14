@@ -41,6 +41,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var fs_1 = require("fs");
 var companies_json_1 = __importDefault(require("../../companies.json"));
+var codesInUse = companies_json_1.default
+    .filter(function (_a) {
+    var abbreviated_code = _a.abbreviated_code;
+    return abbreviated_code.length > 0;
+})
+    .map(function (_a) {
+    var abbreviated_code = _a.abbreviated_code;
+    return abbreviated_code;
+});
 // Talk other ways of doing this, potentially overkill,
 // take first characters, shift right, append random character...
 function threeLetterPermutations(string) {
@@ -60,19 +69,10 @@ function threeLetterPermutations(string) {
 }
 // need to take a company name and create a unique company code if one does not exist
 var createAbrv = function () { return __awaiter(void 0, void 0, void 0, function () {
-    var codesInUse, companyJson;
+    var companyJson;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
-                codesInUse = companies_json_1.default
-                    .filter(function (_a) {
-                    var abbreviated_code = _a.abbreviated_code;
-                    return abbreviated_code.length > 0;
-                })
-                    .map(function (_a) {
-                    var abbreviated_code = _a.abbreviated_code;
-                    return abbreviated_code;
-                });
                 companyJson = companies_json_1.default.map(function (_a) {
                     var name = _a.name, abbreviated_code = _a.abbreviated_code;
                     var companyCode = abbreviated_code;
