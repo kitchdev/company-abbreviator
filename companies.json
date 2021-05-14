@@ -53,7 +53,7 @@
   },
   {
     "name": "Facebook",
-    "abbreviated_code": "FAE"
+    "abbreviated_code": "FAC"
   },
   {
     "name": "Monsanto",
@@ -81,7 +81,7 @@
   },
   {
     "name": "Face Incorporated",
-    "abbreviated_code": "FAC"
+    "abbreviated_code": "FAE"
   },
   {
     "name": "City of Chicago",
@@ -105,7 +105,7 @@
   },
   {
     "name": "5 Alive",
-    "abbreviated_code": "5AL"
+    "abbreviated_code": "ALI"
   },
   {
     "name": "Barnes & Noble",
@@ -133,11 +133,11 @@
   },
   {
     "name": "Old Dominion Freight Line",
-    "abbreviated_code": "OLO"
+    "abbreviated_code": "OLD"
   },
   {
     "name": "Oldsmobile",
-    "abbreviated_code": "OLD"
+    "abbreviated_code": "OLS"
   },
   {
     "name": "Mazda",
@@ -153,30 +153,30 @@
   },
   {
     "name": "H8orade Inc",
-    "abbreviated_code": "H8O"
+    "abbreviated_code": "HOR"
   },
   {
     "name": "Hydro Quebec",
-    "abbreviated_code": "HYR"
-  },
-  {
-    "name": "Hydra Inc",
     "abbreviated_code": "HYD"
   },
   {
+    "name": "Hydra Inc",
+    "abbreviated_code": "HYR"
+  },
+  {
     "name": "lucious boy bubby",
-    "abbreviated_code": "LBB"
+    "abbreviated_code": "LUC"
   },
   {
     "name": "cha-cha",
-    "abbreviated_code": "LBC"
-  },
-  {
-    "name": "cha-cha-glide",
     "abbreviated_code": "CHA"
   },
   {
-    "name": "cha-cha-glide-coooool",
+    "name": "cha-cha-glide",
     "abbreviated_code": "CHC"
+  },
+  {
+    "name": "cha-cha-glide-coooool",
+    "abbreviated_code": "CHH"
   }
 ]

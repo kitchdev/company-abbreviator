@@ -41,6 +41,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var fs_1 = require("fs");
 var companies_json_1 = __importDefault(require("../../companies.json"));
+function nextChar(c) {
+    var nextCode = c.charCodeAt(0) + 1;
+    console.log(nextCode);
+    return String.fromCharCode(nextCode > 90 ? 65 : nextCode);
+}
 var codesInUse = companies_json_1.default
     .filter(function (_a) {
     var abbreviated_code = _a.abbreviated_code;
@@ -76,12 +81,19 @@ var createAbrv = function () { return __awaiter(void 0, void 0, void 0, function
                 companyJson = companies_json_1.default.map(function (_a) {
                     var name = _a.name, abbreviated_code = _a.abbreviated_code;
                     var companyCode = abbreviated_code;
+                    var compressedName = name
+                        .replace(/[^a-zA-Z]/gi, "") // remove spaces and special ,haracters
+                        .toUpperCase();
+                    // before we start heavy process to create permutations, check if first 3 chars will work
+                    var firstTryCode = compressedName.slice(0, 3);
+                    if (codesInUse.indexOf(firstTryCode) === -1) {
+                        companyCode = firstTryCode;
+                        codesInUse.push(companyCode);
+                    }
                     if (!companyCode) {
-                        var compressedName = name
-                            .replace(/[^0-9a-zA-Z]/gi, "") // remove spaces and special ,haracters
-                            .toUpperCase()
-                            .slice(0, 6); // Slicing cause otherwise way too may permutations runs for very long time
-                        var codeArr = threeLetterPermutations(compressedName);
+                        // Finding all possible permutations for the first 6 chars of company name. 
+                        // Slicing cause otherwise way too may permutations runs for very long time.
+                        var codeArr = threeLetterPermutations(compressedName.slice(0, 6));
                         codeArr.some(function (code) {
                             if (codesInUse.indexOf(code) >= 0) {
                                 return false;
@@ -90,11 +102,21 @@ var createAbrv = function () { return __awaiter(void 0, void 0, void 0, function
                             codesInUse.push(companyCode);
                             return true;
                         });
+                        // If no permutations match were naively checking to see if updating the last character of each permut will give us an available code 
+                        // and if all else fails we throw an error...
                         if (!companyCode) {
-                            // NTH
-                            // codeArr[0].slice(0, 2) + ""
-                            // start slicing and assigning random characters
-                            companyCode = "NEEDS A FIXIN!";
+                            var codeFound = codeArr.some(function (code) {
+                                var lastChar = code.charAt(2);
+                                var codeToTry = code.slice(0, 2) + nextChar(lastChar);
+                                if (codesInUse.indexOf(codeToTry) < 0) {
+                                    companyCode = codeToTry;
+                                    codesInUse.push(companyCode);
+                                    return true;
+                                }
+                            });
+                            if (!codeFound) {
+                                throw Error("Code not found for company " + name);
+                            }
                         }
                     }
                     return {

@@ -50,6 +50,14 @@ var createCompany = function (req, res) { return __awaiter(void 0, void 0, void 
         switch (_a.label) {
             case 0:
                 newCompany = req.body.company;
+                console.log(newCompany.name.length);
+                if (!newCompany.name || newCompany.name.length < 3) {
+                    res.status(422).send({
+                        status: "failure",
+                        message: "You must provide a company name, and it must be at least 3 characters long",
+                    });
+                    return [2 /*return*/];
+                }
                 _a.label = 1;
             case 1:
                 _a.trys.push([1, 3, , 4]);
