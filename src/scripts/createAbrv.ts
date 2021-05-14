@@ -37,7 +37,7 @@ const createAbrv = async (): Company[] => {
         .replace(/[^0-9a-zA-Z]/gi, "") // remove spaces and special ,haracters
         .toUpperCase()
         .slice(0, 6); // Slicing cause otherwise way too may permutations runs for very long time
-      
+
       const codeArr = threeLetterPermutations(compressedName);
 
       codeArr.some((code) => {
@@ -48,6 +48,13 @@ const createAbrv = async (): Company[] => {
         codesInUse.push(companyCode);
         return true;
       });
+
+      if (!companyCode) {
+        // NTH
+        // codeArr[0].slice(0, 2) + ""
+        // start slicing and assigning random characters
+        companyCode = "NEEDS A FIXIN!"
+      }
     }
 
     return {

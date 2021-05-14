@@ -90,6 +90,12 @@ var createAbrv = function () { return __awaiter(void 0, void 0, void 0, function
                             codesInUse.push(companyCode);
                             return true;
                         });
+                        if (!companyCode) {
+                            // NTH
+                            // codeArr[0].slice(0, 2) + ""
+                            // start slicing and assigning random characters
+                            companyCode = "NEEDS A FIXIN!";
+                        }
                     }
                     return {
                         name: name,
