@@ -1,7 +1,7 @@
 [
   {
     "name": "Google",
-    "abbreviated_code": ""
+    "abbreviated_code": "GOO"
   },
   {
     "name": "Good Foods",
@@ -13,15 +13,15 @@
   },
   {
     "name": "Canadian Army",
-    "abbreviated_code": ""
+    "abbreviated_code": "CAA"
   },
   {
     "name": "Canadian Airforce",
-    "abbreviated_code": ""
+    "abbreviated_code": "CAD"
   },
   {
     "name": "Bank of Canada",
-    "abbreviated_code": ""
+    "abbreviated_code": "BAN"
   },
   {
     "name": "Bank of Montreal",
@@ -29,23 +29,23 @@
   },
   {
     "name": "Amazon",
-    "abbreviated_code": ""
+    "abbreviated_code": "AMA"
   },
   {
     "name": "Uber",
-    "abbreviated_code": ""
+    "abbreviated_code": "UBE"
   },
   {
     "name": "Uber Eats",
-    "abbreviated_code": ""
+    "abbreviated_code": "UBR"
   },
   {
     "name": "Amazing Race Canada",
-    "abbreviated_code": ""
+    "abbreviated_code": "AMZ"
   },
   {
     "name": "Goodyear",
-    "abbreviated_code": ""
+    "abbreviated_code": "GOY"
   },
   {
     "name": "Montreal Canadiens",
@@ -53,7 +53,7 @@
   },
   {
     "name": "Facebook",
-    "abbreviated_code": ""
+    "abbreviated_code": "FAE"
   },
   {
     "name": "Monsanto",
@@ -61,23 +61,23 @@
   },
   {
     "name": "Whole Foods",
-    "abbreviated_code": ""
+    "abbreviated_code": "WHO"
   },
   {
     "name": "American Express",
-    "abbreviated_code": ""
+    "abbreviated_code": "AME"
   },
   {
     "name": "Jeep Adventures Texas",
-    "abbreviated_code": ""
+    "abbreviated_code": "JEE"
   },
   {
     "name": "Toronto Dominion",
-    "abbreviated_code": ""
+    "abbreviated_code": "TOR"
   },
   {
     "name": "Oracle",
-    "abbreviated_code": ""
+    "abbreviated_code": "ORA"
   },
   {
     "name": "Face Incorporated",
@@ -85,55 +85,55 @@
   },
   {
     "name": "City of Chicago",
-    "abbreviated_code": ""
+    "abbreviated_code": "CIT"
   },
   {
     "name": "City of Philadelphia",
-    "abbreviated_code": ""
+    "abbreviated_code": "CIY"
   },
   {
     "name": "Amazing Joes BBQ Pit",
-    "abbreviated_code": ""
+    "abbreviated_code": "AMI"
   },
   {
     "name": "Moe's Tavern",
-    "abbreviated_code": ""
+    "abbreviated_code": "MOE"
   },
   {
     "name": "Kwik-E-Mart",
-    "abbreviated_code": ""
+    "abbreviated_code": "KWI"
   },
   {
     "name": "5 Alive",
-    "abbreviated_code": ""
+    "abbreviated_code": "5AL"
   },
   {
     "name": "Barnes & Noble",
-    "abbreviated_code": ""
+    "abbreviated_code": "BAR"
   },
   {
     "name": "Airport of Montreal",
-    "abbreviated_code": ""
+    "abbreviated_code": "AIR"
   },
   {
     "name": "Jeep Canada",
-    "abbreviated_code": ""
+    "abbreviated_code": "JEP"
   },
   {
     "name": "Airport of Toronto",
-    "abbreviated_code": ""
+    "abbreviated_code": "AIP"
   },
   {
     "name": "Torrents R Us",
-    "abbreviated_code": ""
+    "abbreviated_code": "TOE"
   },
   {
     "name": "Canadian Pacific",
-    "abbreviated_code": ""
+    "abbreviated_code": "CAI"
   },
   {
     "name": "Old Dominion Freight Line",
-    "abbreviated_code": ""
+    "abbreviated_code": "OLO"
   },
   {
     "name": "Oldsmobile",
@@ -141,26 +141,42 @@
   },
   {
     "name": "Mazda",
-    "abbreviated_code": ""
+    "abbreviated_code": "MAZ"
   },
   {
     "name": "Nissan",
-    "abbreviated_code": ""
+    "abbreviated_code": "NIS"
   },
   {
     "name": "Jeep",
-    "abbreviated_code": ""
+    "abbreviated_code": "JPE"
   },
   {
     "name": "H8orade Inc",
-    "abbreviated_code": ""
+    "abbreviated_code": "H8O"
   },
   {
     "name": "Hydro Quebec",
-    "abbreviated_code": ""
+    "abbreviated_code": "HYR"
   },
   {
     "name": "Hydra Inc",
     "abbreviated_code": "HYD"
+  },
+  {
+    "name": "lucious boy bubby",
+    "abbreviated_code": "LBB"
+  },
+  {
+    "name": "cha-cha",
+    "abbreviated_code": "LBC"
+  },
+  {
+    "name": "cha-cha-glide",
+    "abbreviated_code": "CHA"
+  },
+  {
+    "name": "cha-cha-glide-coooool",
+    "abbreviated_code": "CHC"
   }
 ]
