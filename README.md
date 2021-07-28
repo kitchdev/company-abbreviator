@@ -22,6 +22,3 @@ As well, their should be a script in the `package.json` that iterates through `c
 - `/create-company` endpoint that allows adding a company to `companies.json` (with name and abbreviated_code)
 
 - script in `package.json` that loops through all companies and ensures unique 3 letter codes for all.
-
-
-Don't worry about fancy Express boilerplate or any excess tooling optimizations, just focus on the basics of clean implementation. Send us back the project in a zip so we can try it out when you're done!
